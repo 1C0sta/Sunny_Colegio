@@ -1,0 +1,409 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --cor-laranja:#FCA311;
+    --cor-azul:#14213D;
+    --cor-cinza:#E5E5E5;
+    --cor-branco:#FFFFFF;
+    --fonte:'Roboto', arial, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background:var(--cor-cinza);
+}
+img{
+    max-width: 100%;
+}
+
+.texto_mid{
+    font-family:var(--fonte);
+    color:var(--cor-azul);
+}
+.why{
+    
+    font-family:var(--fonte);
+    color:var(--cor-laranja);
+    text-align: center;
+    font-size: 48px;
+    margin-top: 50px;
+    
+    
+}
+.underh2{
+    background: linear-gradient(180deg, #FCA311 0%, rgba(252, 163, 17, 0) 100%);;
+    margin-top: 5px;
+    width: 70%;
+    margin:0 auto;
+}
+.igno{
+    text-align: center;
+    margin-top: 30px;
+   margin-left: 200px;
+   margin-right: 200px;
+}
+.conte{
+    font-family:var(--fonte);
+    color:var(--cor-azul);
+}
+.container{
+    max-width: 1140px;
+    width: 85%;
+    margin:0 auto;
+}
+header{
+    
+height: 394px;
+
+background: #14213D;
+position:relative;
+
+z-index: 0;
+}
+header .logo img{
+    margin-left: 350px;
+    
+}
+header .background{
+    border-bottom: 394px solid var(--cor-laranja);
+    border-left: 950px solid transparent;
+    width: 65%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+main .menu-principal{
+    width: 50%;
+    
+}
+main .menu-principal > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items:center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    
+}
+
+main .grid a{
+    color:var(--cor-laranja);
+    text-decoration: none;
+    font-weight: bold;
+    padding: .5rem;
+}
+main .grid a:hover{
+    text-decoration: underline;
+}
+main .homer a{
+    color:var(--cor-azul);
+}
+img.garoto_sunny{
+ margin: 0 auto;
+height: 461px;
+
+}
+main .grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "texto"
+                         "imagem"
+                         "estampa";
+}
+
+main .menu-principal{
+    grid-area:texto;
+    text-align: center;
+    margin-left: 165px;
+    margin-right: 1000px;
+}
+main .gp{
+    grid-area:imagem;
+text-align: center;
+align-self: center;
+vertical-align: middle;
+}
+img.garoto_sunny{
+    
+    width: 80%;
+}
+
+.ficazul{
+    background-color:var(--cor-azul);
+    border-top:1.5rem solid var(--cor-cinza) ;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+
+.azul{
+    background-color:var(--cor-azul);
+    display: inline-block;
+    padding: 1rem 5rem;
+    transform: skewX(-25deg);
+    text-align: center;
+    
+    
+}
+.doismeio{
+    margin: 50px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+main .doismeio a{
+    color:var(--cor-cinza);
+    text-decoration: none;
+    font-weight:bold;
+    padding:.5rem;
+}
+main .doismeio a:hover{
+    text-decoration: underline;
+}
+.laranja{
+    background-color:var(--cor-laranja);
+    display: inline-block;
+    padding: 1rem 5rem;
+    transform: skewX(-25deg);
+    
+}
+.quarteto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    vertical-align: middle;
+    align-items: center;
+    margin-left: 140px;
+    margin-right: 150px;
+    
+    
+}
+.secao_mid{
+    background-color:var(--cor-laranja);
+    
+}
+.mapa{
+    background:var(--cor-azul) url("../imagens/Screenshot_2.png") no-repeat;
+    background-size: cover;
+    border-top:1.5rem solid var(--cor-cinza) ;
+}
+.mapa .mapa-local iframe{
+    border: .5rem solid var(--cor-laranja);
+    margin-top: 3rem;
+    border-radius: 2rem;
+    width: 100%;
+
+}
+.container-localizacao{
+    
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:2rem;
+} 
+.mapa .mapa-local{
+    width: 55%;
+}
+.mapa .mapa-endereco{
+    
+    width: 35%;
+   align-items: center;
+   justify-content: center;
+}
+img.solaesquerda{
+    margin-left:350px;
+}
+.mapa .mapa-matricula a{
+    color:black;
+    text-decoration: none;
+    font-weight:bold;
+    padding:.5rem;
+}
+.mapa .mapa-matricula a:hover{
+    text-decoration: underline;
+}
+.mapa-matricula{
+    background-color:var(--cor-cinza);
+    display: inline-block;
+    padding: 2rem 7rem;
+    transform: skewX(-25deg);
+}
+.mapa .mapa-lugar{
+    color:var(--cor-branco);
+    margin-top: 15rem;
+    font-size: 18px;
+}
+.mapa .mapa-lugar .local{
+    display:inline-block;
+    padding:1rem;
+    padding-left:5rem;
+    background: url("../imagens/PC_ping.png") no-repeat left center;
+    background-size: 35px;
+}
+.mapa .mapa-lugar .telefone{
+    display:inline-block;
+    padding:1rem;
+    padding-left:5rem;
+    background: url("../imagens/PC_Phone.png") no-repeat left center;
+    background-size: 30px;
+}
+footer{
+    background-color:var(--cor-laranja) ;
+    border-top:1.5rem solid var(--cor-cinza) ;
+}
+.container-footer{
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .funcionamento{
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+footer .funcionamento h3{
+    color:var(--cor-azul);
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+
+}
+footer .redes{
+    display:flex;
+    justify-content: space-between;
+}
+footer .btn-redes{
+    width: 50px;
+    height: 45px;
+    text-indent: -1000000;
+    display: inline-block;
+}
+footer .btn-mail{
+    background: url("../imagens/PCCEL_email_icon.png");
+    background-position: -58px 3px;
+}
+footer .btn-whats{
+    background: url("../imagens/PCCEL_whatsapp_icon.png");
+}
+footer .btn-face{
+    background: url("../imagens/PCCEL_facebook_icon.png");
+    background-position: -10px -65px;
+}
+footer .btn-insta{
+    background: url("../imagens/PCCEL_instagram_icon.png");
+    
+}
+footer .btn-redes:hover{
+    transform: scale(105%);
+}
+.judofundo{
+    background-color:var(--cor-laranja);
+    color: #FFFFFF;
+    font-size: 24px;
+    
+}
+.criancas{
+    text-align: center;
+}
+.judou{
+    text-align: center;
+}
+.fundosal{
+    background-color:var(--cor-azul);
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.fundomusic{
+    font-size: 24px;
+}
+.sala{
+    background-color:var(--cor-laranja);
+    color: #FFFFFF;
+}
+.lugares{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;    
+}
+.auditorio{
+    background-color:var(--cor-azul);
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.refeitorio{
+    background-color:var(--cor-laranja);
+    color: #FFFFFF;
+}
+.patio{
+    background-color:var(--cor-laranja);
+    color: #FFFFFF;
+}
+.quadra{
+    background-color:var(--cor-azul);
+    color: #FFFFFF;
+}
+.matricula-back{
+    background-color:var(--cor-azul);
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 2rem 7rem;
+    transform: skewX(-25deg);
+}
+.conteudo-paginas{
+    border-top: 1.5rem solid var(--cor-laranja);
+    min-height: 300px;
+    
+}
+.conteudo-paginas form{
+    padding:2rem;
+    max-width: 600px;
+    margin:2rem auto;
+}
+.campo-formulario{
+    margin: 1.5rem 0;
+}
+.campo-formulario input{
+    width:100%;
+    padding: 1rem;
+}
+.campo-formulario input[type=radio]{
+    width: initial;
+    margin: 0 1rem;
+}
+.campo-formulario input[type=checkbox]{
+    width: initial;
+    margin: 0 1rem;
+}
+.campo-formulario fieldset{
+    padding:2rem;
+    background-color: #FFFFFF;
+}
+.btn-formulario{
+    background-color:var(--cor-laranja);
+    padding:2rem 3rem;
+    color:#FFFFFF;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 16px;
+    font-weight: bold;
+    display:inline-block;
+    cursor: pointer;
+}
+.btn-formulario:hover{
+    background-color: #c77d07;
+    box-shadow:0 4px 1px #a86a05;
+}
+
